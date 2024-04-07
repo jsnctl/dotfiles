@@ -1,5 +1,9 @@
 PROMPT='💤 %B%F{202}%1~/%f%b '
 
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source ~/.local/bin/virtualenvwrapper.sh
+
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
 SAVEHIST=5000
