@@ -1,3 +1,5 @@
+source ~/zsh-stuff/kubectl-prompt.zsh
+
 PROMPT='💤 %B%F{202}%1~/%f%b '
 
 export WORKON_HOME=$HOME/.virtualenvs
@@ -41,4 +43,5 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end
 bindkey "$terminfo[kcud1]" history-beginning-search-forward-end
 
-source ~/zsh-stuff/kubectl-alias.sh
+source ~/zsh-stuff/kubectl-plugin.zsh
+alias rprompt='source ~/zsh-stuff/toggle-prompt.sh'
