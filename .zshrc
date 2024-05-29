@@ -45,3 +45,5 @@ bindkey "$terminfo[kcud1]" history-beginning-search-forward-end
 
 source ~/zsh-stuff/kubectl-plugin.zsh
 alias rprompt='source ~/zsh-stuff/toggle-prompt.sh'
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
