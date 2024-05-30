@@ -1,10 +1,4 @@
-source ~/zsh-stuff/kubectl-prompt.zsh
-
 PROMPT='💤 %B%F{202}%1~/%f%b '
-
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source ~/.local/bin/virtualenvwrapper.sh
 
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -23,7 +17,7 @@ zstyle ':completion:*' menu select
 setopt always_to_end
 setopt complete_in_word
 
-source ~/zsh-stuff/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/projects/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias ls="ls --color"
 
 # Load version control information
@@ -43,7 +37,7 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "$terminfo[kcuu1]" history-beginning-search-backward-end
 bindkey "$terminfo[kcud1]" history-beginning-search-forward-end
 
-source ~/zsh-stuff/kubectl-plugin.zsh
-alias rprompt='source ~/zsh-stuff/toggle-prompt.sh'
+source ~/projects/dotfiles/kubectl-plugin.zsh
+alias rprompt='source ~/projects/dotfiles/toggle-prompt.sh'
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
